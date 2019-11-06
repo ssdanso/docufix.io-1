@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie-edge" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
+        <link rel="stylesheet" type="text/css" href="css/header&footer.css">
+        <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+
+        
+        <link rel="icon" type="image/png" href="https://res.cloudinary.com/thecavemann/image/upload/v1571839870/logo_g4kuoa.png"/>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet" />
+        <title>DOCUFIX | Homepage</title>
+    </head>
+    <body>
+        <!-- Header Start -->
+        <!-- Desktop Header -->
+        <header>
+          <nav class="navbar navbar-expand-lg navbar-light scrolling-navbar fixed-top">
+            <a class="navbar-brand px-sm-5 ml-3" href="index.html"><img src="https://res.cloudinary.com/kuic/image/upload/v1573054016/docufix/Group_1_5_olg2uj.svg" alt="DOCUFIX" id="image"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto px-5">
+                <li class="nav-item">
+                  <a class="nav-link text-center" href="about_us.html">About us</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-center" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Tools
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item text-justify" href="fileUpload.html">Compare files</a>
+                    <a class="dropdown-item text-justify" href="grammarChecker.html">Grammar Check</a>
+                    <a class="dropdown-item text-justify" href="fileDuplicate.html">Duplicates Check</a>
+                  </div>
+                </li><li class="nav-item">
+                    <a class="nav-link text-center" href="login.php">Login</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-center" href="signup.php">Get Started</a>
+                </li>
+                
+              </ul>
+            </div>
+          </nav>
+    </header>
+
+        <!-- Mobile Header -->
+        <i class="fas fa-bars" id="open" onclick="openSideNav()"></i>
+
+        <div id="side-nav-wrapper">
+          <ul class="side-nav">
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Tools<i class="fas fa-caret-down"></i></a>
+              <ul>
+                <li><a href="fileUpload.html">Compare files</a></li>
+                <li><a href="grammarChecker.html">Grammar Check</a></li>
+                <li><a href="fileDuplicate.html">Duplicates Check</a></li>
+                <li><a href="plagiarismChecker.html">Plagiarism Check</a></li>
+                <li><a href="paraphrase.html">Paraphrasing tool</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Login</a></li>
+            <li><a class="active" href="#">Get started</a></li>
+          </ul>
+        </div>
+        <!-- Header Ends -->
+
+        <!-- Banner Starts -->
+        <section class="banner-wrapper">
+            <div class="banner">
+                <div class="banner-text" data-aos="fade-right" data-aos-duration="1500">
+                    <h3>Your Online Document Comparison Solution</h3>
+                    <p>Compare documents content and find out the differences in each content of the files without much stress</p>
+                </div>
+                <div data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">
+                    <button class="b-btn comp-btn"><a href="./fileUpload.html"">Compare files</a></button>
+                    <button class="b-btn dup-btn"><a href="./fileDuplicate.html">Check duplicates</a></button>
+                </div>
+            </div>
+    
+            <div class="banner-img" data-aos="fade-down" data-aos-duration="1800">
+                <img src="https://res.cloudinary.com/theonlybakare/image/upload/v1572801658/drawkit_hw20tz.png" alt="workflow" />
+            </div>
+        </section>
+        <!-- Banner Ends -->
+
+        <!-- Feature Section Starts -->
+        <div class="feature-wrapper">
+          <div class="feature-content">
+            <h3>Features Of Docufix</h3>
+            
+            <div class="feature-content-text-wrapper">
+              <div class="feature-content-text feat-1" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-out">
+                  <div class="feature-content-asset">
+                    <img src="https://res.cloudinary.com/theonlybakare/image/upload/v1573037501/Plagiarism_s3zf2l.png" alt="Plaigiarism" />
+                  </div>
+                  <h2>Plagiarism Checker</h2>
+                  <p>Plagiarism checker detects plaigiarism in your text and checks for other writing issues. Our plagiarism checker flags specific sentences and provides reference information about the source, calculate an overall orginality score for your document. So you don't need to worry we have you covered.</p>
+              </div>
+              <div class="feature-content-text feat-2" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300" data-aos-easing="ease-in-out">
+                  <div class="feature-content-asset">
+                    <img src="https://res.cloudinary.com/theonlybakare/image/upload/v1573037501/Word_duplicate_sbqism.png" alt="Word duplicate" />
+                  </div>
+                  <h2>Word Duplicate</h2>
+                  <p>One of the main problem in document is that most of the words that are duplicated also appear in the previous line, which makes it difficult to achieve your goal. If you'd want to remove all duplicated words, then it would not be that difficult by using our tool, all duplicated file will be reviewed.</p>
+              </div>
+              <div class="feature-content-text feat-3" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="600" data-aos-easing="ease-in-out">
+                  <div class="feature-content-asset">
+                    <img src="https://res.cloudinary.com/theonlybakare/image/upload/v1573037501/File_checker_xz39qn.png" alt="File checker" />
+                  </div>
+                  <h2>File Checker</h2>
+                  <p>We help you compare files and texts, and generate differences in a visual text format which is easy to manage and understand. Comparing hundreds of files can be a tedious task, there are high chances that you would miss out on something. Here we make that easy for you.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Feature Section Ends -->
+
+        <!-- Pricing Plan Section Begins -->
+        <div class="pricing-wrapper">
+          <div class="pricing-content-wrapper">
+            <h3>Pricing Offer</h3>
+            <hr>
+            <div class="price-container">
+              <div class="pricing-contents pr-1" data-aos="fade-right" data-aos-duration="2000">
+                <div class="pricing-content-text">
+                  <div class="rectangle">
+                    <p>20 Comparisons a month</p>
+                    <p>Ads</p>
+                  </div>
+                  <h3>FREE PLAN</h3>
+                  <div class="money-wrapper">
+                    <div>
+                        <h3 class="money">$0</h3><sub>/month</sub>
+                    </div>
+                  </div>
+                  <div class="users">
+                    <p>Unlimited plagiarism check</p>
+                    <p>15 grammer Check</p>
+                    <p>5 duplicate check</p>
+                    <p>5 compare files</p>
+                    <p>3 file format downloads</p>
+                    <p>(.docx, .txt, .pdf)</p>
+                  </div>
+                  <div class="button-container">
+                    <button class="money-btn-2"><a href="#">Get Plan</a></button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="pricing-contents pr-2" data-aos="fade-up" data-aos-duration="2000">
+                <div class="pricing-content-text">
+                  <div class="rectangle r2">
+                    <p>100 Comparisons a month</p>
+                    <p>No Ads</p>
+                  </div>
+                  <h3>BASIC PLAN</h3>
+                  <div class="money-wrapper">
+                    <div>
+                        <h3 class="money">$12</h3><sub>/month</sub>
+                    </div>
+                  </div>
+                  <div class="users">
+                    <p>Unlimited plagiarism check</p>
+                    <p>Unlimited grammer Check</p>
+                    <p>15 duplicate check</p>
+                    <p>10 compare files</p>
+                    <p>8 file format downloads</p>
+                    <p>(.docx, .txt, .pdf, .json, .xml, .csv, .rtf, .xls)</p>
+                  </div>
+                  <div class="button-container">
+                    <button class="money-btn-2"><a href="#">Get Plan</a></button>
+                  </div>
+              </div>
+            </div>
+
+              <div class="pricing-contents pr-3" data-aos="fade-left" data-aos-duration="2000">
+                <div class="pricing-content-text">
+                  <div class="rectangle r3">
+                    <p>Unlimited Comparisons a month</p>
+                    <p>No Ads</p>
+                  </div>
+                  <h3>PRO PLAN</h3>
+                  <div class="money-wrapper">
+                    <div>
+                        <h3 class="money">$48</h3><sub>/month</sub>
+                    </div>
+                  </div>
+                  <div class="users us-3">
+                    <p>Unlimited plagiarism check</p>
+                    <p>Unlimited grammer Check</p>
+                    <p>Unlimited duplicate check</p>
+                    <p>Unlimited compare files</p>
+                    <p>All available file formats download</p>
+                  </div>
+                  <div class="button-container">
+                    <button class="money-btn-2"><a href="#">Get Plan</a></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Pricing Plan Section Ends -->
+
+        <!-- Testimonies Starts -->
+        <div class="testimony-wrapper">
+          <div class="testimony-content">
+            <h3>Testimony</h3>
+            <hr>
+            <div class="testimonials-wrapper">
+              <div class="testimonials">
+                <i class="fa fa-quote-left"></i>
+                <p>Moving fluff at the edge of forever Orion's sword cosmos gathered by gravity laws of physics. Star stuff hervesting light.</p>
+
+                <div class="testimonials-img">
+                  <img src="https://res.cloudinary.com/dzwnhcpep/image/upload/v1571947889/Car%20Park/Ellipse_1_q0de4l.png" alt="" />
+                  <cite title="Source Title">Mohamed Nady</cite>
+                </div>
+              </div>
+
+              <div class="testimonials">
+                <i class="fa fa-quote-left"></i>
+                <p>Science kindling the energy hidden in matter astonishment birth of brilliant sysntheses rings of Uranus. Stirred by starlight descended.</p>
+
+                <div class="testimonials-img">
+                  <img src="https://res.cloudinary.com/dzwnhcpep/image/upload/v1571947851/Car%20Park/Ellipse_1_1_vbpw76.png" alt="" />
+                  <cite title="Source Title">Mohamed Nady</cite>
+                </div>
+              </div>
+
+              <div class="testimonials">
+                <i class="fa fa-quote-left"></i>
+                <p>Science kindling the energy hidden in matter astonishment birth of brilliant sysntheses rings of Uranus. Stirred by starlight descended.</p>
+
+                <div class="testimonials-img">
+                  <img src="https://res.cloudinary.com/dzwnhcpep/image/upload/v1571947866/Car%20Park/Ellipse_1_2_p3rw3q.png" alt="" />
+                  <cite title="Source Title">Mohamed Nady</cite>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Testimonies Ends -->
+
+        <!-- News Letter Starts -->
+        <div class="news-wrapper">
+          <div class="news-content">
+            <h2>subscribe to our newsletter</h2>
+            <div class="news-input">
+            <input type="email" placeholder="Enter your email address here" required />
+              <button><a href="#">Submit</a></button>
+            </div>
+          </div>
+        </div>
+        <!-- News Letter Ends -->
+
+        <!-- FOOTER STARTS -->
+        <footer>
+          
+        </footer>
+        <!-- FOOTER ENDS -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

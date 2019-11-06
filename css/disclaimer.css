@@ -1,0 +1,28 @@
+h3, h5 {
+    color: #3B1F9E;
+    font-family: 'Nunito', sans-serif;
+}
+
+strong {
+    color: #3B1F9E;
+}
+
+.disclaimer-area {
+    background: #F6F8F9;
+}
+
+.disclaimer-area a {
+    color: #3B1F9E;
+    font-weight: bold;
+    border: 1px solid #3B1F9E;
+    padding: 0.5rem;
+    border-radius: 5%;
+    text-decoration: none;
+}
+
+.disclaimer-area a:hover {
+    background-color: #3B1F9E;
+    color: white;
+    text-decoration: none;
+    font-weight: normal;
+}
