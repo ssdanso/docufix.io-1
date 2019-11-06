@@ -219,6 +219,24 @@ h2, h3{
     }
 }
 
+@media only screen and (min-width:385px) and (max-width:504px){
+    .form-box{
+        margin: auto;
+        margin-left: 5px;
+        padding: 0px;
+        width: 25em;
+    }
+
+    body{
+        overflow-x: hidden;
+    }
+
+    #container{
+        margin: auto;
+        padding: auto;
+    }
+}
+
 @media only screen and (min-width:505px) and (max-width:767px){
     h1{
         margin: auto;
