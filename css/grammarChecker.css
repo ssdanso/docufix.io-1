@@ -39,7 +39,7 @@ box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.05);
     margin-left: auto;
     margin-right: auto;}*/}
 
-#checktextpara, #keyslang, .h, .card-body{
+#checktextpara, #keyslang, .h, .card-body, article{
     display: flex;
     justify-content: center;
 
