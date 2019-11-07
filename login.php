@@ -667,7 +667,7 @@ if(isset($_POST['submit'])){
                             Continue
                         </button>
                         <p class="Already-acc">Don't have an account?&nbsp;&nbsp; <a href="signup.php"><span>Sign up</span></a></p>
-                <h3 class="col-lg-8 text-center">OR</h3> 
+                /* <h3 class="col-lg-8 text-center">OR</h3> 
                 <div class=" btn-grp col-lg-7  justify-content-between">
 
                     <DIV class="col-lg-4">
@@ -682,7 +682,7 @@ if(isset($_POST['submit'])){
                             Register with google
                         </button>
                     </DIV>
-                </div>
+                </div> */
 
             </form>
             <span class="error"></span>

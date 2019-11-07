@@ -660,7 +660,7 @@ if(isset($_POST['submit'])){
                 <button id="submitData" name="submit" type="submit" class="btn signup-btn "  >
                             Sign Up
                         </button>
-                <h3 class="col-lg-8 text-center">OR</h3> 
+                <!-- <h3 class="col-lg-8 text-center">OR</h3> 
                 <div class=" btn-grp col-lg-7  justify-content-between">
 
                     <DIV class="col-lg-4">
@@ -675,7 +675,7 @@ if(isset($_POST['submit'])){
                             Register with google
                         </button>
                     </DIV>
-                </div>
+                </div> -->
 
             </form>
             <span class="error"></span>
