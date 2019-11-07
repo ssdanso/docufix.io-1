@@ -10,11 +10,11 @@ body{
     padding: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(bottom, #FFFFFF  70%, #3B1F9E 30%);
-    background-image: -o-linear-gradient(bottom,  #FFFFFF 70%, #3B1F9E 30%);
-    background-image: -moz-linear-gradient(bottom,  #FFFFFF 70%, #3B1F9E 30%);
-    background-image: -webkit-linear-gradient(bottom,  #FFFFFF 70%, #3B1F9E 30%);
-    background-image: -ms-linear-gradient(bottom,  #FFFFFF 70%, #3B1F9E 30%);
+    background-image: linear-gradient(bottom, #FFFFFF  80%, #3B1F9E 20%);
+    background-image: -o-linear-gradient(bottom,  #FFFFFF 80%, #3B1F9E 20%);
+    background-image: -moz-linear-gradient(bottom,  #FFFFFF 80%, #3B1F9E 20%);
+    background-image: -webkit-linear-gradient(bottom,  #FFFFFF 80%, #3B1F9E 20%);
+    background-image: -ms-linear-gradient(bottom,  #FFFFFF 80%, #3B1F9E 20%);
     
     
 }
@@ -29,18 +29,8 @@ h1{
     font-weight: bold;
     color: #ffffff !important;
 }
-.btn-link{
-    color: rgba(12, 10, 90, 0.8) !important;
-    font-size: 0.8em !important;
-    text-decoration: none !important;
-}
-.btn-link:hover{
+h3{
     color: #3B1F9E !important;
-    text-decoration: none !important;
-}
-.card-header{
-    background-color: #FFFFFF !important;
-    border-bottom: 1px solid #3B1F9E !important;
 }
 .list-inline-item a{
     color:  #828282 !important;
@@ -78,27 +68,22 @@ a:hover{
 }
 #Introduction{
     width: 100%;
-    margin-top: 10%;
+    margin-top: 25%;
     margin-bottom: 2%;
     
 }
-
 .navbar{
-    
     background-color: #3B1F9E;
     color: #FFFFFF !important;
 }
 .nav-link {
     color: #FFFFFF !important;
 }
-.nav-link:hover{
-    background-color: #FFFFFF !important;
-    color: #3B1F9E !important;
-}
 #container{
+    width: 83% !important;
     background-color: #FFFFFF !important;
-    border: 1px solid rgba(196, 196, 196, 0.4);
-    border-radius: 10px !important;
+border: 1px solid rgba(196, 196, 196, 0.4);
+border-radius: 10px !important;
 }
 .navbar-dark{
     color: #FFFFFF !important;
@@ -106,24 +91,21 @@ a:hover{
 @media only screen and (max-width:450px){
     body{
         text-align: center;
-        background-image: linear-gradient(bottom, #FFFFFF  80%, #3B1F9E 20%);
-        background-image: -o-linear-gradient(bottom,  #FFFFFF 80%, #3B1F9E 20%);
-        background-image: -moz-linear-gradient(bottom,  #FFFFFF 80%, #3B1F9E 20%);
-        background-image: -webkit-linear-gradient(bottom,  #FFFFFF 80%, #3B1F9E 20%);
-        background-image: -ms-linear-gradient(bottom,  #FFFFFF 80%, #3B1F9E 20%);  
+        background-image: linear-gradient(bottom, #FFFFFF  95%, #3B1F9E 5%);
+        background-image: -o-linear-gradient(bottom,  #FFFFFF 95%, #3B1F9E 5%);
+        background-image: -moz-linear-gradient(bottom,  #FFFFFF 95%, #3B1F9E 5%);
+        background-image: -webkit-linear-gradient(bottom,  #FFFFFF 95%, #3B1F9E 5%);
+        background-image: -ms-linear-gradient(bottom,  #FFFFFF 95%, #3B1F9E 5%);  
     }
     #Introduction h3{
         font-size: 1.5em;
     }
-    #Introduction{
-        margin-top:30%;
-    }
-    h2{
+    h3{
         font-size: 1em;
         text-align: center;
     }
      .section{
          margin: 0;
      }   
-     
+
 }

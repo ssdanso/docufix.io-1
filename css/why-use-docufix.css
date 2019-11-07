@@ -1,4 +1,3 @@
-
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -10,116 +9,91 @@ body {
   font-family: 'Nunito', sans-serif;
 }
 
-.navbar{
-   background-color: #3B1F9E;
-}
-
-.navbar .nav-link{
-  color:#fff !important;
-}
-
-.why-container-header{
-  max-width: 100%;
-  background: #3B1F9E;
-  padding-top: 10rem;
-    padding-bottom: 6rem;
-}
-
-.why-container-header .title{
-  color:#fff;
-  font-weight: 600;
-    font-size: 2em;
-    text-align: center;
-}
-
-.why-container-content{
-  max-width: 90%;
-    margin: auto;
-    padding: 3rem 2rem 3rem 2rem;
-    border-radius: 8px;
-    position: relative;
-    top: -40px;
-    z-index: 100;
-    background: #fafafa;
+.container{
+	max-width: 90%;
+	margin: auto;
+	padding-top: 6rem;
 }
 
 footer,nav{
-  background: #fff;
+	background: #fff;
 }
 
 
 .row{
-  display: flex;
-  justify-content: space-between;
-  margin-bottom:3rem;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom:3rem;
 }
 
 
 .img-res{
-  max-width: 100%;
-  height: auto;
+	max-width: 100%;
+	height: auto;
 }
 
 .mw-300{
-  max-width: 300px !important;
+	max-width: 300px !important;
 }
 
 .grey-row{
-  background: #E9ECEF;
-  padding: 4rem 2rem;
-  border-radius: 6px;
+	background: #fff;
+	padding: 4rem 2rem;
+	border-radius: 6px;
 }
 
 .col img{
-  width: 100%;
-    max-width: 400px;
+	max-width: 100%;
+    width: 400px;
 }
 
-
 @media (min-width: 1200px){
-
-  .h-title{
-  font-size: 2.25rem;
-  font-weight: bold;
-  line-height: 1.4em;
-  color: #3b1f9e;
+	.h-title{
+	font-size: 2.25rem;
+	font-weight: bold;
+	line-height: 1.4em;
+	color: #3b1f9e;
 }
 
 .h-content{
-  font-size: 1.125em;
+	font-size: 1.125em;
     line-height: 1.5em;
     color: #11092C;
 }
 
 .why-content-col{
-  flex: 2;
+	flex: 2;
 }
 
 .why-img-col{
-  flex: 1;
+	flex: 1;
   }
 }
 
 @media (max-width: 1000px){
 .row{
-  flex-direction: column;
+	flex-direction: column;
  }
 
 .h-title{
-  font-size: 1.5rem;
-  line-height: 1.5em;
-  font-weight: bold;
-  color: #3b1f9e;
+	font-size: 1.5rem;
+	line-height: 1.5em;
+	font-weight: bold;
+	color: #3b1f9e;
 }
 
 .h-content{
-  font-size: 1.1rem;
+	font-size: 1.1rem;
     line-height: 1.5em;
     color: #11092C;
  }
 
  .why-content-col{
-  order:-1;
+ 	order:-1;
  }
 }
+
+
+
+
 
