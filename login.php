@@ -58,6 +58,7 @@ if(isset($_POST['submit'])){
         <link rel="stylesheet" type="text/css" href="css/header&footer.css">
         <link rel="icon" type="image/png" href="https://res.cloudinary.com/thecavemann/image/upload/v1571839870/logo_g4kuoa.png"/>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
         <script src="https://kit.fontawesome.com/75f59c3e4c.js" crossorigin="anonymous"></script>
         
         <style>
@@ -70,7 +71,16 @@ if(isset($_POST['submit'])){
                  position: absolute;
                  bottom: 0;
              }
-             
+              .forgot__pass__link {
+                margin-top: -20px;
+                padding-bottom: 30px;
+                 font-size: 20px;
+                  color: rgb(150, 149, 146); 
+             }
+             .forgot__pass__link :hover{
+                text-decoration: none !important;
+                color: #3B1F9E !important;
+             }
              .div-wrapper img {
                  position: relative;
                  display: block;
@@ -633,7 +643,7 @@ if(isset($_POST['submit'])){
 
 
     <body class="">
-        <div class="container-fluid col-lg-12 col-sm- col-xs- page">
+        <div class="container-fluid col-lg-12 col-sm- col-xs- page animated finite pulse">
         <header class="">
             <div class="row   ">
                 <div class="col-sm-12 bar justify-content-between">
@@ -666,8 +676,9 @@ if(isset($_POST['submit'])){
                 <button id="submitData" name="submit" type="submit" class="btn cont-btn "  >
                             Continue
                         </button>
+                        <a href="forgot.php" class="forgot__pass__link">Forgot Password?</a>
                         <p class="Already-acc">Don't have an account?&nbsp;&nbsp; <a href="signup.php"><span>Sign up</span></a></p>
-                /* <h3 class="col-lg-8 text-center">OR</h3> 
+                <!-- <h3 class="col-lg-8 text-center">OR</h3> 
                 <div class=" btn-grp col-lg-7  justify-content-between">
 
                     <DIV class="col-lg-4">
@@ -682,7 +693,7 @@ if(isset($_POST['submit'])){
                             Register with google
                         </button>
                     </DIV>
-                </div> */
+                </div> -->
 
             </form>
             <span class="error"></span>
