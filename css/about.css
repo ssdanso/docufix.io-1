@@ -10,25 +10,22 @@ body{
 }
 
 .navbar{
-    background-color: #3B1F9E !important;
+    
+    background-color: #3B1F9E;
     color: #FFFFFF !important;
 }
-
-.nav-link, button.navbar-toggler {
-    color: #FFFFFF !important;
-    font-style: normal !important;
-    font-size: 1.2em !important;
-    line-height: 19px !important;
-}
-
-a.nav-link.text-center, a#navbarDropdown.nav-link.dropdown-toggle.text-center{
+.nav-link {
     color: #FFFFFF !important;
 }
-
 .nav-link:hover{
     background-color: #FFFFFF !important;
     color: #3B1F9E !important;
 }
+.btn-link:hover{
+    color: #3B1F9E !important;
+    text-decoration: none !important;
+}
+
 
 .container-fluid{
     background-color: #3B1F9E; 
