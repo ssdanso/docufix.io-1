@@ -128,8 +128,8 @@
                           <input type="text" class="form-control" placeholder="url" name="url"> 
                           <div class="col-lg-2 col-xs-12 col-sm-12 btn-3 text-center mt-5 mb-5 justify-content-center">
                            <input type="submit" class="btn btn-primary" value="Check!">
-                         </div>
-                       </div>
+                          </div>
+                        </div>
                       </form>
                     </div>
                 </div>
