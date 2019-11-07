@@ -204,25 +204,25 @@ if(isset($_POST['submit'])){
         }
         @media (max-width:425px){
                 .form-control {
-                    width: 320px !important;
+                    width: 300px !important;
                     height: 40px !important;
                     
                 }
                 .signup-btn {
-                    width: 320px !important;
-                    height: 50px !important;
+                    width: 300px !important;
+                    height: 40px !important;
                     margin-left: 3px;
                     background: #3B1F9E !important;
                     margin-top: 15px ;
                      
                 }
                 .google{
-                    width: 320px !important;
-                    height: 50px !important;
+                    width: 300px !important;
+                    height: 40px !important;
                 }
                 .facebook {
-                    width: 320px !important;
-                    height: 50px !important;
+                    width: 300px !important;
+                    height: 40px !important;
                 }
                 
                 p {
