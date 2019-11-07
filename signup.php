@@ -55,7 +55,7 @@ if(isset($_POST['submit'])){
                            $result = mysqli_query($conn , $sql);
                     if($result){
                                     $message .= '<div class="alert alert-success" role="alert">
-                                    Record Saved Successfully <button class="btn"><a href = "login.php">Home</a></button></div>';
+                                    Record Saved Successfully <button class="btn"><a href = "index.html">Home</a></button></div>';
                                             echo ($message);
 
                     }
@@ -633,7 +633,7 @@ if(isset($_POST['submit'])){
             <form class="form-align" method="POST" action="">
                 
                 <div class="form-group col-md-4 col-lg-8">
-                    <input type="text" class="form-control" id="name" name="fullname" placeholder="First Name" pattern="[a-zA-Z]{1,}" data-toggle="tooltip" data-placement="bottom" title="Enter Your First Name" required><span class="error"></span>
+                    <input type="text" class="form-control" id="name" name="firstname" placeholder="First Name" pattern="[a-zA-Z]{1,}" data-toggle="tooltip" data-placement="bottom" title="Enter Your First Name" required><span class="error"></span>
                 </div>
 
                 <div class="form-group col-md-4 col-lg-8">
