@@ -308,6 +308,14 @@ if(isset($_POST['submit'])){
                     width: 320px !important;
                     height: 50px !important;
                 }
+                .lc {
+                    text-align: center;
+                    font-size: 17px;
+                }
+                .forgot__pass__link{
+                    font-size: 17px;
+                    text-align: center;
+                }
                 
                 p {
                     font-size: 18px !important;

@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Docufix | Signup</title>
+        <title>Docufix | Signin</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
         <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
@@ -13,6 +13,8 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
         <script src="https://kit.fontawesome.com/75f59c3e4c.js" crossorigin="anonymous"></script>
+        
+
         
         <style>
              body{
@@ -31,16 +33,7 @@
                  float: left;
                  width: 350px;
              }
-              .forgot__pass__link {
-                margin-top: -20px;
-                padding-bottom: 30px;
-                 font-size: 20px;
-                  color: rgb(150, 149, 146); 
-             }
-             .forgot__pass__link :hover{
-                text-decoration: none !important;
-                color: #3B1F9E !important;
-             }
+             
              .login-section {
                  /* margin: 0;
                  position: absolute;
@@ -63,8 +56,14 @@
              }
              
              .forgot__pass__link {
-                 padding-right: 200px;
-                 margin-bottom: -15px;
+                margin-top: -20px;
+                padding-bottom: 30px;
+                 font-size: 20px;
+                  color: rgb(150, 149, 146); 
+             }
+             .forgot__pass__link :hover{
+                text-decoration: none !important;
+                color: #3B1F9E !important;
              }
              .link {
                  font-size: 18px !important;
@@ -184,6 +183,7 @@
              .cont-btn {
                 margin-bottom: 7vh !important;
              }
+
              
           @media only screen and (max-width: 575.98px){
             .login-section{
@@ -261,6 +261,15 @@
                     width: 320px !important;
                     height: 50px !important;
                 }
+                .lc {
+                	text-align: center;
+                	font-size: 17px;
+                }
+                 .forgot__pass__link{
+                    font-size: 17px;
+                    text-align: center;
+                }
+                
                 
                 p {
                     font-size: 18px !important;
@@ -270,53 +279,7 @@
                     font-size: 25px;
                 }
 
-             }
-               /*@media only screen and(max-width: 375px){
-                .page {
-                    width: 500px;
-                }
-                .form-control {
-                    width: 300px !important;
-                    margin-right: 40vh !important;
-                }
-                .cont-btn {
-                    width: 300px !important;
-                }
-                .google {
-                    width: 300px !important;
-                }
-                .facebook {
-                    width: 300px !important;
-                }
-                .btn-grp {
-                    margin-left: -40px !important;
-                }
-             }*/
-        
-             
-             /*@media only screen and (max-width: 325px){
-                .form-control {
-                    width: 250px !important;
-                    margin-left: 0px !important;
-                    margin-right: 0px !important;
-                }
-                .cont-btn {
-                    width: 250px !important;
-                }
-                .google {
-                    width: 250px !important;
-                }
-                .facebook {
-                    width: 250px !important;
-                }
-                .btn-grp {
-                    margin-left: -10px;
-                }
-                .link {
-                    margin-left: -10px;
-                }
-             }*/
-             
+             }             
              
         @media (min-width: 576px) and (max-width: 767.98px){
             .page{
@@ -556,9 +519,9 @@
              }
              .btn-grp {
                 display: flex;
-                margin-bottom: 30px !important;
+                margin-bottom: 40px !important;
                 margin-left: -23vh;
-                padding-top: 30px;
+                padding-top: 0px;
 
              }
              .google  {
@@ -585,8 +548,9 @@
              }
          .form-align {
             margin: auto;
-         }
-       
+            }
+
+    }   
         
         
             
@@ -608,8 +572,8 @@
             </div>
         </header>
 
-        <section class="container login-section">
-            <div class="title">
+        <section class="container login-section ">
+            <div class="title .animated .slideInRight">
                 <div class="col-lg-8 col-sm-12 ">
                     <h3 class="signUP">Sign in to DOCUFIX</h3>
                     
@@ -629,8 +593,8 @@
                 <button id="submitData" name="submit" type="submit" class="btn cont-btn "  >
                             Continue
                         </button>
-                        <a href="forgot.php" class="forgot__pass__link">Forgot Password?</a>
-                        <p class="Already-acc">Don't have an account?&nbsp;&nbsp; <a href="signup.php"><span>Sign up</span></a></p>
+                        <a href="forgot.php" class="forgot__pass__link">Forgot password?</a>
+                        <p class="Already-acc">Don't have an account?&nbsp;&nbsp; <a href="login.php"><span>Sign up</span></a></p>
                 <!-- <h3 class="col-lg-8 text-center">OR</h3> 
                 <div class=" btn-grp col-lg-7  justify-content-between">
 
@@ -646,7 +610,7 @@
                             Register with google
                         </button>
                     </DIV>
-                </div> -->
+                </div>-->
 
             </form>
             <span class="error"></span>
