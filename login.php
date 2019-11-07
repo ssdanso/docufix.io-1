@@ -291,22 +291,30 @@ if(isset($_POST['submit'])){
         }
         @media(max-width:425px){
                 .form-control {
-                    width: 320px !important;
-                    height: 50px !important;
+                    width: 300px !important;
+                    height: 40px !important;
                     
                 }
                 .cont-btn {
-                    width: 320px !important;
-                    height: 50px !important;
+                    width: 300px !important;
+                    height: 40px !important;
                     background-color:#3B1F9E !important;
                 }
                 .google{
-                    width: 320px !important;
-                    height: 50px !important;
+                    width: 300px !important;
+                    height: 40px !important;
                 }
                 .facebook {
-                    width: 320px !important;
-                    height: 50px !important;
+                    width: 300px !important;
+                    height: 40px !important;
+                }
+                .lc {
+                    text-align: center;
+                    font-size: 17px;
+                }
+                .forgot__pass__link{
+                    font-size: 17px;
+                    text-align: center;
                 }
                 
                 p {
