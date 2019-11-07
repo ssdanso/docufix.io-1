@@ -9,6 +9,9 @@ strong {
 
 .disclaimer-area {
     background: #F6F8F9;
+    position: relative;
+    top: -11em !important;
+    border-radius: .9em !important;
 }
 
 .disclaimer-area a {
@@ -26,3 +29,72 @@ strong {
     text-decoration: none;
     font-weight: normal;
 }
+
+.main-background {
+    background-color: #3B1F9E;
+    height: 60vh;
+}
+
+/* .disclaimer-navbar {
+    background-color: #3B1F9E;
+} */
+
+.nav-link {
+    /* color: white !important; */
+}
+
+.disclaimer-text h2 {
+    padding-top: 4.5em;
+    font-weight: bold;
+}
+
+.updated-button {
+    color: #3B1F9E !important;
+    border-radius: 16px !important;
+    font-weight: bold !important;
+    font-size: 1em !important;
+    padding: 0.4em 1.3em !important;
+}
+
+@media (max-width: 780px) and (min-width: 500px) {
+    .disclaimer-area {
+        background: #F6F8F9;
+        position: relative;
+        top: -5em !important;
+        border-radius: .9em !important;
+    }
+}
+
+@media (max-width: 780px) and (min-width: 500px) {
+    .disclaimer-area {
+        background: #F6F8F9;
+        position: relative;
+        top: -5em !important;
+        border-radius: .9em !important;
+    }
+}
+
+@media (max-width: 500px) {
+    .disclaimer-area {
+        background: #F6F8F9;
+        position: relative;
+        top: -7.5em !important;
+        border-radius: .9em !important;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 901px) {
+    .disclaimer-area {
+        background: #F6F8F9;
+        position: relative;
+        top: -5em !important;
+        border-radius: .9em !important;
+    }
+}
+
+/* @media (max-width: 1500px) and (min-width: 1025px) {
+    .disclaimer-text h2 {
+        padding-top: 19%;
+        font-weight: bold;
+    }
+} */
