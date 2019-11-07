@@ -638,7 +638,7 @@ if(isset($_POST['submit'])){
             <div class="row   ">
                 <div class="col-sm-12 bar justify-content-between">
                     <div class="col-lg-4 col-sm-3">
-                        <a class="navbar-brand  " href="index.html"><img src="https://res.cloudinary.com/kuic/image/upload/v1572638901/docufix/Docufix_Logo_lnsgsr.svg" alt="DOCUFIX" id="image" width="75"  height="13"></a>
+                        <a class="navbar-brand  "href="index.html"><img src="https://res.cloudinary.com/kuic/image/upload/v1572638901/docufix/Docufix_Logo_lnsgsr.svg" alt="DOCUFIX" id="image" width="75"  height="13"></a>
                     </div>
                    
                </div>
@@ -666,7 +666,7 @@ if(isset($_POST['submit'])){
                 <button id="submitData" name="submit" type="submit" class="btn cont-btn "  >
                             Continue
                         </button>
-                        <p class="Already-acc">Don't have an account?&nbsp;&nbsp; <a href="login.php"><span>Sign up</span></a></p>
+                        <p class="Already-acc">Don't have an account?&nbsp;&nbsp; <a href="signup.php"><span>Sign up</span></a></p>
                 <h3 class="col-lg-8 text-center">OR</h3> 
                 <div class=" btn-grp col-lg-7  justify-content-between">
 
