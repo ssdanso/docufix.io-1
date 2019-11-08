@@ -167,14 +167,15 @@ a:hover{
 }
 
 #btn-primary{
-    background-color: #3B1F9E;
+    width: 200px !important;
     border-color: #3B1F9E !important;
-    font-weight: bold;
-    margin: auto;
+}
+
+#submit-btn{
+    text-align: center;
 }
 
 #btn-primary:hover{
-    text-decoration: none !important;
-    color: #FF9400 !important;
-    font-weight: normal;
+    font-weight: bolder !important;
+    font-size: larger;
 }
