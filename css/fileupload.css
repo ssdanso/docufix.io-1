@@ -145,6 +145,7 @@ li {
 #main {
     background: #fafafa !important;
     padding-bottom: 2em;
+    overflow-x: hidden;
 }
 #navbarNavDropdown a,
 #navbar-brand,
@@ -176,6 +177,9 @@ textarea {
 }
 #textareaBefore {
     border-right: 1px solid#C4C4C4 !important;
+}
+#mList li{
+    padding-top: 2em;
 }
 
 @media (max-width: 576px) {
