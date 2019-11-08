@@ -1,3 +1,20 @@
+<?php
+                 //include your class file
+                    include 'controller.php';
+                      
+                    if(isset($_SESSION['login_user'])){
+
+                    }
+                    else if(isset($_GET['id']) & isset($_GET['code'])){
+                         
+
+
+                    } 
+                    else{
+                        header("location: login.php");
+                    }
+
+?>
 <!DOCTYPE html>
     <html lang="en">
 
@@ -477,21 +494,50 @@
             <div class="title">
 
                 <div class="col-lg-8 col-sm-12 ">
-                    <div class="col-lg-4 back">
-                        <span><a href="login.php" > Back to Login </a></span>
-                    </div>
-                    <h3 class="signUP">Forgot Password</h3>
-                    <span class="tag">Send a link to your email to reset your password</span>                  
+                   
+                    <h3 class="signUP">Change Password</h3>
+                                   
                 </div>
             </div>
                 
-            <form class="form-align" method="POST" action="">
+            <form class="form-align" method="POST" action="changepassword.php">
 
-                <div class="form-group col-md-4 col-lg-8">
-                    <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Email address" id="emailAddress" name="email"  data-toggle="tooltip" data-placement="bottom" title="Please enter a your Email Address" required><span class="error"></span>
+                 <div class="form-group col-md-4 col-lg-8">
+                    <input class="form-control" type="password" name="password" id="password" class="form-control" placeholder="Your password" data-toggle="tooltip" data-placement="bottom"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                     title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>     
                 </div>
+                <div class="form-group col-md-4 col-lg-8">
+                    <input type="password" class="form-control" name="verify_password" id="confirmPassword" placeholder="Confirm password" data-toggle="tooltip" data-placement="bottom" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                    title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required><span class="error"></span>
+                </div>
+                                  <?php
+
+                                  if(isset($_POST['submit'])){
+                                    if($_POST['password']===$_POST['verify_password']){
+                                        if(isset($_SESSION['login_user'])){
+                                            $email=$_SESSION['login_user'];
+                                        }
+                                        else if(isset($_GET['id'])){
+                                            $controller= new controller;
+                                            $email=$controller->fetchemailfromid($_GET['id']);
+                                        }
+                                        
+                                        $password=$_POST['password'];
+                                        $password = password_hash($password, PASSWORD_DEFAULT);
+
+                                        $controller= new controller;
+                                        $controller->updatepassword($email, $password);
+
+                                    }
+                                    else{
+                                       echo "Password Mismatch";
+                                    }
+                                  
+                               }
+
+                ?>
                 <button id="submitData" name="submit" type="submit" class="btn reset "  >
-                            Send Reset Link
+                            Submit
                         </button>
 
             </form>
