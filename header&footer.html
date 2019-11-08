@@ -12,10 +12,47 @@
         <link rel="stylesheet" type="text/css" href="css/header&footer.css">
         <link rel="icon" type="image/png" href="https://res.cloudinary.com/thecavemann/image/upload/v1571839870/logo_g4kuoa.png"/>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    </head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      </head>
     <body>
         <!--Header-->
         <header>
+          <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top scrolling-navbar" id="nav">
+            <a class="navbar-brand" href="index.html" id="logo">
+              <img src="https://res.cloudinary.com/kuic/image/upload/v1573054016/docufix/Group_1_5_olg2uj.svg" alt="DOCUFIX" class="image">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" id="btn">
+              <span><i class="fa fa-bars" aria-hidden="true" id="toggle"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav text-center ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="about_us.html">About Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Tools
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="fileupload.html">Compare files</a>
+                    <a class="dropdown-item" href="grammarChecker.html">Grammar Check</a>
+                    <a class="dropdown-item" href="filedelimiter.html">Check for duplicates</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="teampage.html">Our Team</a>
+                </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="login.php" target="_blank">Login</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="signup.php">Get Started</a>
+                  </li>
+              </ul>
+            </div>
+          </nav>
+        </header>
+       <!-- <header>
           <nav class="navbar navbar-expand-lg navbar-light scrolling-navbar fixed-top">
             <a class="navbar-brand px-sm-5 ml-3" href="index.html"><img src="https://res.cloudinary.com/kuic/image/upload/v1573054016/docufix/Group_1_5_olg2uj.svg" alt="DOCUFIX" id="image"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -91,16 +128,16 @@
       <script>
         var SCROLLING_NAVBAR_OFFSET_TOP = 100;
         $(window).on("scroll", function() {
-          var $navbar = $(".navbar");
+                  var $navbar = $(".navbar");
 
-  if ($navbar.length) {
-    if ($navbar.offset().top > SCROLLING_NAVBAR_OFFSET_TOP) {
-      $(".scrolling-navbar").addClass("top-nav-collapse");
-    } else {
-      $(".scrolling-navbar").removeClass("top-nav-collapse");
-    }
-  }
-}); 
-        </script>
+          if ($navbar.length) {
+            if ($navbar.offset().top > SCROLLING_NAVBAR_OFFSET_TOP) {
+              $(".scrolling-navbar").addClass("top-nav-collapse");
+            } else {
+              $(".scrolling-navbar").removeClass("top-nav-collapse");
+            }
+          }
+        }); 
+      </script>
       </body>
 </html>
