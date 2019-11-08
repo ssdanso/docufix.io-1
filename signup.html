@@ -1,77 +1,3 @@
-<?php
-include('connect.php');
-
-$message = '';
-    
-if(isset($_POST['submit'])){
-        $userFirstName = mysqli_escape_string($conn, $_POST ['firstname']);
-        $userLastName = mysqli_escape_string($conn, $_POST ['lastname']);
-        $userEmail = mysqli_escape_string($conn, $_POST['email']);
-        $userNewPassword = mysqli_escape_string($conn, $_POST['password']);
-        $userVerifyPassword = mysqli_escape_string($conn, $_POST['verify_password']);
-       
-        if(empty($userFirstName) || empty($userLastName) || empty($userEmail) || empty($userNewPassword) || empty($userVerifyPassword)){
-            die ("All fields are Required");
-            }
-            if ( strlen ( $userFirstName ) < 2 || strlen ( $userFirstName ) > 50) {
-                $message = '<div class="alert alert-danger" role="alert">First name must be between 1 and 55 characters</div>';
-                echo $message;
-                }
-                if ( strlen ( $userLastName ) < 2 || strlen ( $userLastName ) > 50) {
-                $message = '<div class="alert alert-danger" role="alert">Last name must be between 1 and 55 characters</div>';
-                echo $message;
-                }
-                if ( strlen ( $userEmail ) < 2 || strlen( $userEmail ) > 250) {
-                $message = '<div class="alert alert-danger" role="alert">Email must be between 1 and 254 characters</div>';
-                echo $message;
-                }
-                if ( strlen ( $userNewPassword ) < 8) {
-                $message = '<div class="alert alert-danger" role="alert">Password should be at least 8 characters long</div>';
-                echo $message;
-                }
-                if($userNewPassword === $userVerifyPassword){
-                    $userNewPassword = password_hash($userNewPassword, PASSWORD_DEFAULT);
-                }
-                else{
-                    die ("Error: Password does not match". "<br>");
-                }
-
-
-
-
-                $sql = "SELECT email FROM users WHERE email = '$userEmail' ";
-                $result = mysqli_query($conn, $sql);
-                if (mysqli_num_rows($result) > 0) {
-                  die('email address exists');
-                   }
-                else { 
-
-                    $sql = "INSERT INTO users(firstname, lastname, email, password)
-                    VALUES('$userFirstName', 
-                            '$userLastName',
-                            '$userEmail',
-                            '$userNewPassword'       )";
-                           
-                           $result = mysqli_query($conn , $sql);
-                    if($result){
-                                    $message .= '<div class="alert alert-success" role="alert">
-                                    Record Saved Successfully <button class="btn"><a href = "index.html">Home</a></button></div>';
-                                            echo ($message);
-
-                    }
-                    else{
-                        $message .= '<div class="alert alert-danger" role="alert">
-                        Record not Saved ' . mysqli_error($conn) . '<button class="btn"><a href = "index.html">Home</a></button>
-                        </div>';
-                    
-                    }
-
-                }
-
-
-    }
- ?>
-
 <!DOCTYPE html>
     <html lang="en">
 
@@ -234,9 +160,9 @@ if(isset($_POST['submit'])){
                 }
                 .link {
                     margin-left: 12vh;
-                    margin-right: 0px !important;
                     padding-top: 5vh !important;
                     margin-bottom: -15px !important;
+                    margin-right: 0px !important;
                 }
              }
         @media (min-width: 576px) and (max-width: 767.98px){
@@ -436,6 +362,7 @@ if(isset($_POST['submit'])){
                  margin: 36px auto;
                  background: #E5E5E5
              }
+             
              .link {
                 margin-left: 10vh; 
              }
@@ -509,12 +436,13 @@ if(isset($_POST['submit'])){
          }
         
         }
-        @media only screen and  (max-width: 2560px){
+        @media (max-width: 2560px){
             .lc{
                 margin-right: -100px !important;
                 text-align: ;
 
              }
+        }
         
              
              
@@ -617,7 +545,6 @@ if(isset($_POST['submit'])){
              .bar{
                 display: flex;
              }
-
         </style>
     </head>
 
@@ -631,7 +558,7 @@ if(isset($_POST['submit'])){
                     <div class="col-lg-4 col-sm-3">
                         <a class="navbar-brand  " href="index.html"><img src="https://res.cloudinary.com/kuic/image/upload/v1572638901/docufix/Docufix_Logo_lnsgsr.svg" alt="DOCUFIX" id="image" width="75"  height="13"></a>
                     </div>
-                    <div class="col-lg-2 col-sm-4 lc">
+                    <div class="col-lg-2 col-sm-4 lc col-xl-4">
                         <a class="link " href="login.php">Sign in</a>
                     </div>
                </div>
