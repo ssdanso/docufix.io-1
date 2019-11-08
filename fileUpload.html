@@ -211,7 +211,7 @@
                     </div>
                     <div class="form-group mt-4" style="margin-bottom: 1em;">
                       <button style="background-color:  #3B1F9E;color: white;" id="uploadBtn" type="submit" value="submit"
-                        class="btn text-light rounded-pill px-5">Upload</button>
+                        class="btn text-light rounded-pill px-5">Compare</button>
           
                          
                     </div>
@@ -446,9 +446,6 @@
                        <select type="select" id="email" name="select">
                         <option value="txt" selected>select doc type</option>
                         <option value=".txt"> .txt </option>
-                        <option value=".pdf"> .pdf</option>
-                        <option value=".docx"> .docx </option>
-                        <option value=".epub">.epub </option>
                         <option value=".doc"> .doc</option>
                        </select>
                        <input type="email" id="email" name="mail" placeholder="Please input your email Address..." required>
@@ -1325,10 +1322,12 @@ $(window).on("scroll", function() {
       }).done (function(data) {
           
         setTimeout(function() {
+          $("#form").trigger("reset");
                 $('.msgbox').html(data);
                 $('#closeSend').hide();
                 $('#ta').hide();
                 $('#email').hide();
+                
             }, delay);
         });
      
