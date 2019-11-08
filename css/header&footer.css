@@ -11,13 +11,16 @@ body{
     width: 100%;
     height: 100%;
     background-color: #fafafa !important;
-    overflow-x: hidden; 
-    
-    
+}
+.fa-bars{
+    color: #3B1F9E !important;
 }
 #image{
-    width: 120%;
-     height: 120%;
+    width: 100%;
+     height: 100%;
+}
+.header{
+    width: 100%;
 }
 .navbar{
     background-color: #ffffff;
