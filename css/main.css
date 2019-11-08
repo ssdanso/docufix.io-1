@@ -565,7 +565,7 @@ a {
   }
 }
 
-@media (max-width: 1160px) {
+@media (max-width: 1000px) {
   .feature-content h3 {
     text-align: center;
   }
