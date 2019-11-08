@@ -67,10 +67,10 @@ $the_mailer->setFrom ("docufixwebapp@gmail.com", "DOCUFIX DOC ");
 $the_mailer->subject = "Your document";
 $the_mailer->addAddress($email); 
 $the_mailer-> isHTML(true);
+$the_mailer->Subject = "Compared Document";
 $the_mailer->Body = "Your document";
 $the_mailer->addAttachment('alldocs/'.$fname);
-
-
+echo $fname;
 if ($the_mailer->send()){
     echo '<p class="text-warning">Yepeeee. Email with attachement has been sent Successfully! Kindly check your mail!</p>';
     unlink('alldocs/'.$fname);
