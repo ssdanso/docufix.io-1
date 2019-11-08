@@ -147,7 +147,7 @@
         </div> 
           
         <!--Footer-->
-       <footer id="footer>
+       <footer id="footer">
               <div class="container mt-3 mb-3">
                 <div class="row">
                   <div class="col-sm-12 text-center">
