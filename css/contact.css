@@ -148,6 +148,11 @@ a:hover{
          font-size: medium !important;
          margin-bottom: 16px !important;
      }
+
+     #btn-primary{
+        width: 200px !important;
+        border-color: #3B1F9E !important;
+    }
 }
 
 #pre-form1{
@@ -166,11 +171,6 @@ a:hover{
     width: 100%;
 }
 
-#btn-primary{
-    width: 200px !important;
-    border-color: #3B1F9E !important;
-}
-
 #submit-btn{
     text-align: center;
 }
@@ -178,4 +178,5 @@ a:hover{
 #btn-primary:hover{
     font-weight: bolder !important;
     font-size: larger;
+    border-color: #3B1F9E !important;
 }
