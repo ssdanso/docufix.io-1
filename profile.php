@@ -1,9 +1,12 @@
 <?php
           session_start();
+          
           if (!isset($_SESSION['login_user'])) {
               header('Location: login.php');
               exit();
          }
+         
+              
    ?>
 
 
@@ -59,17 +62,18 @@
           </li> -->
 
           <li class="nav-item"> 
-               <?php  if(isset($_GET['logout']))  {  
-                      session_destroy();  
-                      unset($_SESSION['username']); 
-                    }  
-                ?>
-            <a class="nav-link" href="index.html" name="logout" >Logout</a>
+             
+            <a class="nav-link" href="logout.php" name="logout" >Logout</a>
             </li>
 
           <li class="nav-item">
             <a class="nav-link" href="/dashboard">
-                <div class="profile-circle">M.X</div>
+                <div class="profile-circle">
+                  <?php
+                 echo substr($_SESSION['firstname'], 0, 1).'.'.substr($_SESSION['lastname'], 0, 1);
+                 ?>
+
+                </div>
             </a>
           </li>
         </ul>
@@ -80,7 +84,7 @@
         <section class="col-3 pr-3 userprofile-col">
             <div class = "profile-info-bloc p-0">
             <p class="small-spaced-text p-0">Profile Information</p>
-            <h5>Subscription <span class="prof-btn mr-2 p-bloc-btn">Basic Plan</span></h5>
+            <h5>Subscription <span class="prof-btn mr-2 p-bloc-btn">Free Plan</span></h5>
             <p class="m-0 font-nine">Duration: Forever</p>
             <p class="font-nine">Limit: 20mb/month upload</p>
             </div>
@@ -100,16 +104,27 @@
             
         </section>
         <section class="col-9 pl-md-5 userprofile-col profile-details">
-            <h4 class="userprofile-name shaded-black"> <?= $_SESSION['name'] ?> </h4>
-            <p class="userprofile-plan medium-purple-text">Basic User</p>
+            <h4 class="userprofile-name shaded-black">
+            <?php
+            echo $_SESSION['firstname'].' '.$_SESSION['lastname'];
+
+            ?>
+
+             </h4>
+            <p class="userprofile-plan medium-purple-text">Free User</p>
             <p class="userprofile-date small-spaced-text">Date Registered <span> <?= $_SESSION['registered_date'] ?> </span></p>
             <button class="userprofile-changeplan btn prof-btn p-bloc-btn mr-2"><i class="fa fa-pencil" aria-hidden="true"></i> Change Plan</button>
-            <button class="userprofile-changeplan btn prof-btn p-bloc-btn"><i class="fa fa-lock" aria-hidden="true"></i>Change Password</button>
+            <a href="changepassword.php"><button class="userprofile-changeplan btn prof-btn p-bloc-btn"><i class="fa fa-lock" aria-hidden="true"></i>Change Password</button></a>
 
             <h6 class="shaded-black prof-about-title"><i class="fa fa-user" aria-hidden="true"></i> About</h6>
             <p class="small-spaced-text p-0">CONTACT INFORMATION</p>
             <div class="contact-info">
-            <p class="d-flex justify-content-between medium-text">Full Name <span class="medium-purple-text"> <?= $_SESSION['name'] ?> </span></p>
+            <p class="d-flex justify-content-between medium-text">Full Name <span class="medium-purple-text"> 
+              <?php
+            echo $_SESSION['firstname'].' '.$_SESSION['lastname'];
+
+            ?>
+             </span></p>
             <p class="d-flex justify-content-between medium-text">Email <span class="medium-purple-text"> <?= $_SESSION['login_user'] ?> </span></p>
             <!-- <p class="d-flex justify-content-between medium-text">Phone Number <span class="medium-purple-text">08034143461</span></p> -->
                   

@@ -11,6 +11,7 @@
         <link rel="stylesheet" type="text/css" href="css/header&footer.css">
         <link rel="icon" type="image/png" href="https://res.cloudinary.com/thecavemann/image/upload/v1571839870/logo_g4kuoa.png"/>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
         <script src="https://kit.fontawesome.com/75f59c3e4c.js" crossorigin="anonymous"></script>
         
         <style>
@@ -23,7 +24,16 @@
                  position: absolute;
                  bottom: 0;
              }
-             
+              .forgot__pass__link {
+                margin-top: -20px;
+                padding-bottom: 30px;
+                 font-size: 20px;
+                  color: rgb(150, 149, 146); 
+             }
+             .forgot__pass__link :hover{
+                text-decoration: none !important;
+                color: #3B1F9E !important;
+             }
              .div-wrapper img {
                  position: relative;
                  display: block;
@@ -120,25 +130,25 @@
         }
         @media (max-width:425px){
                 .form-control {
-                    width: 320px !important;
-                    height: 50px !important;
+                    width: 300px !important;
+                    height: 40px !important;
                     
                 }
                 .signup-btn {
-                    width: 320px !important;
-                    height: 50px !important;
+                    width: 300px !important;
+                    height: 40px !important;
                     margin-left: 3px;
                     background: #3B1F9E !important;
                     margin-top: 15px ;
                      
                 }
                 .google{
-                    width: 320px !important;
-                    height: 50px !important;
+                    width: 300px !important;
+                    height: 40px !important;
                 }
                 .facebook {
-                    width: 320px !important;
-                    height: 50px !important;
+                    width: 300px !important;
+                    height: 40px !important;
                 }
                 
                 p {
@@ -152,6 +162,7 @@
                     margin-left: 12vh;
                     padding-top: 5vh !important;
                     margin-bottom: -15px !important;
+                    margin-right: 0px !important;
                 }
              }
         @media (min-width: 576px) and (max-width: 767.98px){
@@ -351,6 +362,7 @@
                  margin: 36px auto;
                  background: #E5E5E5
              }
+             
              .link {
                 margin-left: 10vh; 
              }
@@ -423,6 +435,13 @@
             margin: auto;
          }
         
+        }
+        @media (max-width: 2560px){
+            .lc{
+                margin-right: -100px !important;
+                text-align: ;
+
+             }
         }
         
              
@@ -532,14 +551,14 @@
 
 
     <body class="">
-        <div class="container-fluid col-lg-12 col-sm- col-xs- page">
+        <div class="container-fluid col-lg-12 col-sm- col-xs- page animated finite pulse">
         <header class="">
             <div class="row   ">
                 <div class="col-sm-12 bar justify-content-between">
                     <div class="col-lg-4 col-sm-3">
                         <a class="navbar-brand  " href="index.html"><img src="https://res.cloudinary.com/kuic/image/upload/v1572638901/docufix/Docufix_Logo_lnsgsr.svg" alt="DOCUFIX" id="image" width="75"  height="13"></a>
                     </div>
-                    <div class="col-lg-2 col-sm-4 lc">
+                    <div class="col-lg-2 col-sm-4 lc col-xl-4">
                         <a class="link " href="login.php">Sign in</a>
                     </div>
                </div>

@@ -85,6 +85,7 @@ if(isset($_POST['submit'])){
         <link rel="stylesheet" type="text/css" href="css/header&footer.css">
         <link rel="icon" type="image/png" href="https://res.cloudinary.com/thecavemann/image/upload/v1571839870/logo_g4kuoa.png"/>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
         <script src="https://kit.fontawesome.com/75f59c3e4c.js" crossorigin="anonymous"></script>
         
         <style>
@@ -97,7 +98,16 @@ if(isset($_POST['submit'])){
                  position: absolute;
                  bottom: 0;
              }
-             
+              .forgot__pass__link {
+                margin-top: -20px;
+                padding-bottom: 30px;
+                 font-size: 20px;
+                  color: rgb(150, 149, 146); 
+             }
+             .forgot__pass__link :hover{
+                text-decoration: none !important;
+                color: #3B1F9E !important;
+             }
              .div-wrapper img {
                  position: relative;
                  display: block;
@@ -194,25 +204,25 @@ if(isset($_POST['submit'])){
         }
         @media (max-width:425px){
                 .form-control {
-                    width: 320px !important;
-                    height: 50px !important;
+                    width: 300px !important;
+                    height: 40px !important;
                     
                 }
                 .signup-btn {
-                    width: 320px !important;
-                    height: 50px !important;
+                    width: 300px !important;
+                    height: 40px !important;
                     margin-left: 3px;
                     background: #3B1F9E !important;
                     margin-top: 15px ;
                      
                 }
                 .google{
-                    width: 320px !important;
-                    height: 50px !important;
+                    width: 300px !important;
+                    height: 40px !important;
                 }
                 .facebook {
-                    width: 320px !important;
-                    height: 50px !important;
+                    width: 300px !important;
+                    height: 40px !important;
                 }
                 
                 p {
@@ -224,6 +234,7 @@ if(isset($_POST['submit'])){
                 }
                 .link {
                     margin-left: 12vh;
+                    margin-right: 0px !important;
                     padding-top: 5vh !important;
                     margin-bottom: -15px !important;
                 }
@@ -498,6 +509,12 @@ if(isset($_POST['submit'])){
          }
         
         }
+        @media only screen and  (max-width: 2560px){
+            .lc{
+                margin-right: -100px !important;
+                text-align: ;
+
+             }
         
              
              
@@ -600,13 +617,14 @@ if(isset($_POST['submit'])){
              .bar{
                 display: flex;
              }
+
         </style>
     </head>
 
 
 
     <body class="">
-        <div class="container-fluid col-lg-12 col-sm- col-xs- page">
+        <div class="container-fluid col-lg-12 col-sm- col-xs- page animated finite pulse">
         <header class="">
             <div class="row   ">
                 <div class="col-sm-12 bar justify-content-between">

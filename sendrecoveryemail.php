@@ -1,20 +1,21 @@
+<?php
+                 //include your class file
+                    include 'controller.php';
+?>
 <!DOCTYPE html>
     <html lang="en">
 
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Docufix | Signin</title>
+        <title>Docufix | Forgot Password</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
         <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/header&footer.css">
         <link rel="icon" type="image/png" href="https://res.cloudinary.com/thecavemann/image/upload/v1571839870/logo_g4kuoa.png"/>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
         <script src="https://kit.fontawesome.com/75f59c3e4c.js" crossorigin="anonymous"></script>
-        
-
         
         <style>
              body{
@@ -33,7 +34,16 @@
                  float: left;
                  width: 350px;
              }
-             
+             .link :hover {
+                text-decoration: none;
+             }
+             .back :hover {
+                text-decoration: none;
+             }
+             .tag {
+                color: rgb(150, 149, 146);
+
+             }
              .login-section {
                  /* margin: 0;
                  position: absolute;
@@ -56,21 +66,14 @@
              }
              
              .forgot__pass__link {
-                margin-top: -20px;
-                padding-bottom: 30px;
-                 font-size: 20px;
-                  color: rgb(150, 149, 146); 
-             }
-             .forgot__pass__link :hover{
-                text-decoration: none !important;
-                color: #3B1F9E !important;
+                 padding-right: 200px;
+                 margin-bottom: -15px;
              }
              .link {
                  font-size: 18px !important;
                 color: #3B1F9E !important;
                 font-weight: 800px !important;
                 padding-top: 20px !important;
-
              }
              .link :hover {
                 text-decoration: none !important;
@@ -95,9 +98,7 @@
                  line-height: 17px;
                  color: rgba(0, 0, 0, 0.56);
                  margin-bottom: 50px;
-             }
-             
-             
+             }           
              
              .signUP {
                 font-style: normal;
@@ -107,8 +108,10 @@
                 font-family: Nunito;
                 font-size: 36px;
                 line-height: 49px;
-                color: rgba(51, 51, 51, 0.8);
-                padding-top: 120PX;
+                color: rgba(51, 51, 51, 0.8);    
+             }
+             .back {
+                padding-top: 230PX !important;
              }
              
              .welcome {
@@ -142,31 +145,16 @@
                 text-align: center;
                 width: 100%;
              }
-             .title{
+             .title {
                 display: flex;
                  flex-direction: column;
                  align-items: center;
                  margin-left: 3px;
-                 padding-bottom: 20px;
+                 padding-bottom: 50px;
 
              }
-             
-             .facebook {
-                background-color: #245C9B;
-                width: 250px;
-                height: 60px;
-                font-size: 16px;
-                color: #ffffff;
-             }
-             .google {
-                background-color: #F34A38;
-                width: 250px;
-                height: 60px;
-                font-size: 16px;
-                color: #ffffff;
-
-             }
-             .nav-link {
+      
+             .link {
                 font-weight: bold!important;
              }
              
@@ -181,10 +169,9 @@
              .form-control{
                 margin-bottom: 20px !important;
              }
-             .cont-btn {
+             .reset {
                 margin-bottom: 7vh !important;
              }
-
              
           @media only screen and (max-width: 575.98px){
             .login-section{
@@ -210,7 +197,7 @@
                 margin-left: -20px !important;
 
             }
-            .cont-btn {
+            .reset {
                  border-radius: 5px;
                  background: #3B1F9E;
                  width: 31%;
@@ -224,51 +211,21 @@
                  border-radius: 42px;
 
              }
-             .btn-grp {
-                margin-bottom: 10px !important;           
-                padding-top: 30px;
-                margin-left: -60px; 
-            }
-             .facebook {
-                    margin-bottom: 20px;
-                   height: 60px !important;
-                width: 400px !important;
-                border-radius: 42px;
-             }
-             .google {
-                height: 60px !important;
-                width: 400px !important; 
-                border-radius: 42px;            }
+             
              .title {
                 text-align: center;
              }
         }
         @media(max-width:425px){
                 .form-control {
-                    width: 300px !important;
-                    height: 40px !important;
+                    width: 320px !important;
+                    height: 50px !important;
                     
                 }
-                .cont-btn {
-                    width: 300px !important;
-                    height: 40px !important;
+                .reset {
+                    width: 320px !important;
+                    height: 50px !important;
                     background-color:#3B1F9E !important;
-                }
-                .google{
-                    width: 300px !important;
-                    height: 40px !important;
-                }
-                .facebook {
-                    width: 300px !important;
-                    height: 40px !important;
-                }
-                .lc {
-                	text-align: center;
-                	font-size: 17px;
-                }
-                 .forgot__pass__link{
-                    font-size: 17px;
-                    text-align: center;
                 }
                 
                 
@@ -279,8 +236,11 @@
                     padding-top: 10px;
                     font-size: 25px;
                 }
+                .back {
+                    padding-top: 150px !important;
+                }
 
-             }             
+             }          
              
         @media (min-width: 576px) and (max-width: 767.98px){
             .page{
@@ -303,7 +263,7 @@
                 margin-bottom: 10px;
 
             }
-            .cont-btn {
+            .reset {
                  border-radius: 5px;
                  background: #3B1F9E;
                  width: 31%;
@@ -316,22 +276,7 @@
                  border-radius: 42px;
 
              }
-             .btn-grp {
-                margin-bottom: 30px !important;           
-                padding-top: 30px;
-                margin-right: -5px; 
-            }
-             .facebook {
-                    margin-bottom: 20px;
-                    height: 70px !important;
-                 width: 450px !important;
-                 border-radius: 42px;
-             }
-             .google {
-                height: 70px !important;
-                 width: 450px !important;
-                 border-radius: 42px;
-             }
+            
              .title {
                 text-align: center;
              }
@@ -358,7 +303,7 @@
                 margin-bottom: 10px;
 
             }
-            .cont-btn {
+            .reset {
                  border-radius: 5px;
                  background: #3B1F9E;
                  width: 31%;
@@ -372,22 +317,7 @@
                  border-radius: 42px;
 
              }
-             .btn-grp {
-                margin-bottom: 10px !important;           
-                padding-top: 30px;
-                margin-left: 140px; 
-            }
-             .facebook {
-                    margin-bottom: 20px;
-                    height: 65px !important;
-                 width: 500px !important;
-                 border-radius: 42px;
-             }
-             .google {
-                height: 65px !important;
-                 width: 500px !important;
-                 border-radius: 42px;
-             }
+             
              .title {
                 text-align: center;
              }
@@ -417,7 +347,7 @@
              form {
                 margin-left: auto;
              }
-             .cont-btn {
+             .reset {
                  border-radius: 5px;
                  background: #3B1F9E;
                  width: 31%;
@@ -447,29 +377,16 @@
                 width: ;
                 height: 952px;
              }
-             .btn-grp {
-                display: flex;
-                margin-bottom: 10px !important;
-                margin-left: -140px;
-                padding-top: 30px;
-
-             }
-             .google  {
-                margin-left: 10px;
-                border-radius: 42px;
-                width: 230px !important;
-
-             }
-             .facebook {
-                border-radius: 42px;
-                width: 230px !important;
-             }
+          
              .title{
                 margin-left: -24px !important;
              }
              .link {
                 font-size: 18px !important;
                 margin-left: 35px;
+             }
+             .back {
+                margin-bottom: 100px;
              }
          
         }
@@ -497,7 +414,7 @@
                  margin-left: -3vh; ;
              }
              
-             .cont-btn {
+             .reset {
                  border-radius: 5px;
                  background: #3B1F9E;
                  width: 31%;
@@ -518,24 +435,7 @@
                 width: 1064px;
                 height: 952px;
              }
-             .btn-grp {
-                display: flex;
-                margin-bottom: 40px !important;
-                margin-left: -23vh;
-                padding-top: 0px;
-
-             }
-             .google  {
-                margin-left: 40px;
-                height: 60px;
-                width: 250px;
-                border-radius: 42px;
-             }
-             .facebook{
-                height: 60px;
-                width: 250px;
-                border-radius: 42px;
-             }
+            
              h3 {
                 font-weight: bold;
                 margin-top: 5vh;
@@ -547,11 +447,15 @@
              .title {
                 margin-left:-3vh !important;
              }
-         .form-align {
-            margin: auto;
-            }
-
-    }   
+            .form-align {
+                margin: auto;
+             }
+             .back {
+                margin-bottom: -10vh !important;
+                margin-left: -2vh !important;
+             }
+     }
+       
         
         
             
@@ -561,7 +465,7 @@
 
 
     <body class="">
-        <div class="container-fluid col-lg-12 col-sm- col-xs- page animated finite pulse">
+        <div class="container-fluid col-lg-12 col-sm- col-xs- page">
         <header class="">
             <div class="row   ">
                 <div class="col-sm-12 bar justify-content-between">
@@ -573,45 +477,43 @@
             </div>
         </header>
 
-        <section class="container login-section ">
-            <div class="title .animated .slideInRight">
+        <section class="container login-section">
+            <div class="title">
+
                 <div class="col-lg-8 col-sm-12 ">
-                    <h3 class="signUP">Sign in to DOCUFIX</h3>
-                    
+                    <div class="col-lg-4 back">
+                        <span><a href="login.php" > Back to Login </a></span>
+                    </div>
+                    <h3 class="signUP">Forgot Password</h3>
+                    <span class="tag">Send a link to your email to reset your password</span>                  
                 </div>
             </div>
                 
-            <form class="form-align" method="POST" action="">
+            <form class="form-align" method="POST" action="sendrecoveryemail.php">
 
                 <div class="form-group col-md-4 col-lg-8">
                     <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Email address" id="emailAddress" name="email"  data-toggle="tooltip" data-placement="bottom" title="Please enter a your Email Address" required><span class="error"></span>
                 </div>
+                                  <?php
 
-                <div class="form-group col-md-4 col-lg-8">
-                    <input type="password" class="form-control" name="password" id="password" placeholder="Password" data-toggle="tooltip" data-placement="bottom" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
-                    title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required><span class="error"></span>
-                </div>
-                <button id="submitData" name="submit" type="submit" class="btn cont-btn "  >
-                            Continue
-                        </button>
-                        <a href="forgot.php" class="forgot__pass__link">Forgot password?</a>
-                        <p class="Already-acc">Don't have an account?&nbsp;&nbsp; <a href="login.php"><span>Sign up</span></a></p>
-                <!-- <h3 class="col-lg-8 text-center">OR</h3> 
-                <div class=" btn-grp col-lg-7  justify-content-between">
+                                  if(isset($_POST['submit'])){
+                                   $email=$_POST['email'];
+                              
 
-                    <DIV class="col-lg-4">
-                        <button id="submitData" name="submit" type="submit" class="btn facebook " >
-                            <i class="fab fa-facebook-f pr-2"></i>
-                            Register with facebook
+                                   //instantiate your class
+                                   $passwordrecovery= new Controller();
+
+                                   //call the sendpasswordresetlink function. 
+                                   $status=$passwordrecovery->sendpasswordresetlink($email);
+                                   
+                                   //return feedback..
+                                   echo $status; 
+                               }
+
+                ?>
+                <button id="submitData" name="submit" type="submit" class="btn reset "  >
+                            Send Reset Link
                         </button>
-                    </DIV>
-                    <DIV class="col-lg-4">
-                        <button id="submitData" name="submit" type="submit" class="btn google " >
-                            <i class="fab fa-google-plus-g pr-2"></i>
-                            Register with google
-                        </button>
-                    </DIV>
-                </div>-->
 
             </form>
             <span class="error"></span>
