@@ -179,7 +179,7 @@ textarea {
     border-right: 1px solid#C4C4C4 !important;
 }
 #mList li{
-    padding-top: 2em;
+    padding-top: .5em;
 }
 
 @media (max-width: 576px) {
